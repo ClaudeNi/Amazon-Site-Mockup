@@ -1,0 +1,198 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Amazon Ember Light";
+    font-style: normal;
+    font-weight: 200;
+    src:
+        url("/fonts/AmazonEmber_Lt.woff") format("woff"),
+        url("/fonts/AmazonEmber_Lt.ttf") format("tff");
+}
+
+@font-face {
+    font-family: "Amazon Ember Regular";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        url("/fonts/AmazonEmber_Rg.woff") format("woff"),
+        url("/fonts/AmazonEmber_Rg.ttf") format("tff");
+}
+  
+@font-face {
+    font-family: "Amazon Ember Bold";
+    font-style: normal;
+    font-weight: 600;
+    src: 
+        url("/fonts/AmazonEmber_Bd.woff") format("woff"),
+        url("/fonts/AmazonEmber_Bd.ttf") format("tff");
+}
+
+/* Utilities */
+.nav-text-regular {
+    color: #fff;
+    font-family: "Amazon Ember Regular", Arial, sans-serif;
+    font-size: 0.8rem;
+}
+
+.nav-text-bold {
+    color: #fff;
+    font-family: "Amazon Ember bold", Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.nav-btn {
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    border-color: #fff;
+}
+
+.gray-text {
+    color: #DADADA;
+}
+
+/* Navbar styling */
+#navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar .top-navbar {
+    display:  flex;
+    padding: 0.5rem 0.5rem;
+    background-color: #131921;
+}
+
+#navbar .top-navbar .logo img {
+    height: 2rem;
+    margin: 0.3rem 0.5rem;
+}
+
+#navbar .top-navbar .search-bar {
+    display: flex;
+}
+
+#navbar .top-navbar .deliver {
+    display: flex;
+    padding: 0.3rem 0.5rem;
+}
+
+#navbar .top-navbar .deliver .fa-map-marker-alt {
+    align-self: center;
+    padding: 0.2rem;
+}
+
+#navbar .top-navbar .search-bar {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.5rem;
+    max-width: 60vw;
+}
+
+#navbar .top-navbar select{
+    padding: 0.5rem;
+    height: 6vh;
+    font-family: "Amazon Ember Regular", Arial, sans-serif;
+    font-size: 0.8rem;
+    background-color: #EBEDF0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+
+#navbar .top-navbar select:hover {
+    background-color: #DADADA;
+}
+
+#navbar .top-navbar .search input{ 
+    padding: 0.5rem;
+    height: 6vh;
+    width: 35vw;
+}
+
+#navbar .top-navbar .search-btn {
+    background-color: #FEBD69;
+    padding: 0.5rem;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+#navbar .top-navbar .search-btn:hover {
+    background-color: #F3A847;
+}
+
+#navbar .top-navbar .current-language {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.5rem;
+}
+
+#navbar .top-navbar .current-language .fa-sort-down {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+#navbar .top-navbar .account {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 0.5rem;
+}
+
+#navbar .top-navbar .account .fa-sort-down {
+    padding: 0.3rem;
+}
+
+#navbar .top-navbar .returns-orders {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 0.5rem;
+}
+
+#navbar .top-navbar .cart {
+    /* background: url("../imgs/cart.png") center center / contain no-repeat; */
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0.3rem 0.5rem;
+}
+
+#navbar .top-navbar .cart .cart-text {
+    color: #F08804;
+    position: relative;
+    top: -15px;
+    left: 30px;
+}
+
+#navbar .bottom-navbar {
+    background-color: #232F3E;
+}
+
+#navbar .bottom-navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0.2rem 0.3rem;
+}
+
+#navbar .bottom-navbar ul li {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.black-friday {
+    display: flex;
+    justify-content: center;
+}
