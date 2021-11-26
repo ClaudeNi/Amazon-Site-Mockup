@@ -66,6 +66,7 @@
 
 #navbar .top-navbar {
     display:  flex;
+    justify-content: space-around;
     padding: 0.5rem 0.5rem;
     background-color: #131921;
 }
@@ -162,7 +163,6 @@
 }
 
 #navbar .top-navbar .cart {
-    /* background: url("../imgs/cart.png") center center / contain no-repeat; */
     height: 100%;
     display: flex;
     align-items: flex-end;
@@ -195,4 +195,101 @@
 .black-friday {
     display: flex;
     justify-content: center;
+}
+
+.bread-crumbs {
+    font-family: "Amazon Ember Regular", Arial, sans-serif;
+    color: #555;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Item Styling */
+
+#item-section {
+    display: flex;
+    padding: 1rem;
+}
+
+#item-section .left-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 420px;
+    position: sticky;
+    top: 5px;
+}
+
+#item-section .left-column .item-Gallery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+#item-section .left-column .small-img {
+    width: 42px;
+    height: 42px;
+    border: 1px #8d8d8d solid;
+    margin-bottom: 8px;
+    padding: 1px 1px;
+}
+  
+#item-section .left-column .small-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+  
+#item-section .left-column .small-img:hover {
+    cursor: pointer;
+    border-color: #e47911;
+    box-shadow: 0px 0px 4px 2px #f90;
+}
+
+.big-img {
+    display: none;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    white-space: nowrap;
+    max-width: 28%;
+    height: 95%;
+}
+
+.big-img1 {
+    display: block;
+}
+
+.big-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.small-img2:hover ~ .big-img1,
+.small-img3:hover ~ .big-img1,
+.small-img4:hover ~ .big-img1,
+.small-img5:hover ~ .big-img1,
+.small-img6:hover ~ .big-img1 {
+    display: none; 
+}
+
+.small-img2:hover ~ .big-img2 {
+    display: block;
+}
+
+.small-img3:hover ~ .big-img3 {
+    display: block;
+}
+
+.small-img4:hover ~ .big-img4 {
+    display: block;
+}
+
+.small-img5:hover ~ .big-img5 {
+    display: block;
+}
+
+.small-img6:hover ~ .big-img6 {
+    display: block;
 }
