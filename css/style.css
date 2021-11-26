@@ -270,7 +270,8 @@
 .small-img3:hover ~ .big-img1,
 .small-img4:hover ~ .big-img1,
 .small-img5:hover ~ .big-img1,
-.small-img6:hover ~ .big-img1 {
+.small-img6:hover ~ .big-img1, 
+.small-img7:hover ~ .big-img1 {
     display: none; 
 }
 
@@ -291,5 +292,9 @@
 }
 
 .small-img6:hover ~ .big-img6 {
+    display: block;
+}
+
+.small-img7:hover ~ .big-img7 {
     display: block;
 }
