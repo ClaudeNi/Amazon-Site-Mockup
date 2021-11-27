@@ -166,6 +166,10 @@
     flex-direction: column;
 }
 
+#navbar .small-screen {
+    display: none;
+}
+
 #navbar .top-navbar {
     display:  flex;
     justify-content: space-around;
@@ -424,7 +428,7 @@
 }
 
 #item-section .middle-column .bottom-section ul {
-    list-style: disc;
+    list-style: none;
 }
 
 #item-section .middle-column .bottom-section ul li {

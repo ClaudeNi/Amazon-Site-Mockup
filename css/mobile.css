@@ -1,2 +1,91 @@
 /* Mobile Responsiveness */
+@media(max-width: 1200px) {
+    :root {
+        font-size: 12px;
+    }
+}
 
+@media(max-width: 1000px) {
+    /* Utilities */
+    .nav-text-regular {
+        color: #fff;
+        font-family: "Amazon Ember Regular", Arial, sans-serif;
+        font-size: 0.8rem;
+    }
+
+    .nav-text-bold {
+        color: #fff;
+        font-family: "Amazon Ember bold", Arial, sans-serif;
+        font-size: 1rem;
+    }
+
+    .nav-btn {
+        border: 1px solid transparent;
+    }
+
+    .nav-btn:hover {
+        border-color: #fff;
+    }
+
+    /* Styling */
+    #navbar .top-navbar {
+        display: none;
+    }
+
+    #navbar .bottom-navbar {
+        display: none;
+    }
+
+    #navbar .small-screen {
+        display:  flex;
+        flex-direction: column;
+        padding: 0.5rem 0.5rem;
+        background-color: #131921;
+    }
+
+    #navbar .small-screen .top-side {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        font-size: 1.5rem;
+    }
+
+    #navbar .small-screen .top-side .logo img {
+        height: 2rem;
+        margin: 0.3rem 0.5rem;
+    }
+
+    .cart-text {
+        color: #F08804;
+        position: relative;
+        top: -17px;
+        left: 28px;
+    }
+
+    .middle-side {
+        display: flex;
+    }
+
+    input {
+        width: 95vw;
+        height: 6vh;
+    }
+
+    .search-btn {
+        width: 5vw;
+        background-color: #FEBD69;
+        padding: 0.5rem;
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .bottom-side {
+        padding: 0.5rem;
+    }
+}
