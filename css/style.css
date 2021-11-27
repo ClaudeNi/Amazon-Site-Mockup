@@ -58,6 +58,103 @@
     color: #DADADA;
 }
 
+.regular-text {
+    font-family: "Amazon Ember Regular", Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #000;
+}
+
+.bold-text {
+    font-family: "Amazon Ember Bold", Arial, sans-serif;
+    font-size: 1rem;
+    color: #000;
+}
+
+.title {
+    font-family: "Amazon Ember Regular", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0;
+}
+
+.link {
+    font-family: "Amazon Ember Regular", Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #007185;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #ce4d2d;
+    border-color: #ce4d2d;
+}
+
+.unavailable-text {
+    font-family: "Amazon Ember Regular", Arial, sans-serif;
+    font-weight: 400;
+    color: #B12704;
+}
+
+.fa-envelope {
+    color: #ccc;
+    font-size: 1.2rem;
+    padding: 0 0.2rem;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+    font-size: 1.2rem;
+    padding: 0 0.2rem;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+    font-size: 1.2rem;
+    padding: 0 0.2rem;
+}
+
+.fa-pinterest {
+    color: #E60023;
+    font-size: 1.2rem;
+    padding: 0 0.2rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 0.2rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.similar-btn {
+    font-family: "Amazon Ember Regular", Arial, sans-serif;
+    font-size: 0.9rem;
+    background: #FFD814;
+    border-color: #FCD200;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.list-btn {
+    text-align: left;
+    font-family: "Amazon Ember Regular", Arial, sans-serif;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    background: #e7e9ec;
+    border-color: #adb1b8;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
+.other-text {
+    font-family: "Amazon Ember Regular", Arial, sans-serif;
+    color: #E29500;
+}
+
 /* Navbar styling */
 #navbar {
     display: flex;
@@ -209,12 +306,14 @@
 #item-section {
     display: flex;
     padding: 1rem;
+    border-bottom: 1px solid #ccc;
 }
 
+/* Left column */
 #item-section .left-column {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 30%;
     height: 420px;
     position: sticky;
     top: 5px;
@@ -228,7 +327,7 @@
 
 #item-section .left-column .small-img {
     width: 42px;
-    height: 42px;
+    height: 50px;
     border: 1px #8d8d8d solid;
     margin-bottom: 8px;
     padding: 1px 1px;
@@ -252,7 +351,7 @@
     left: 60px;
     top: 10px;
     white-space: nowrap;
-    max-width: 28%;
+    max-width: 80%;
     height: 95%;
 }
 
@@ -297,4 +396,94 @@
 
 .small-img7:hover ~ .big-img7 {
     display: block;
+}
+
+/* Middle column */
+
+#item-section .middle-column {
+    width: 45%;
+    padding: 0 0.5rem;
+}
+
+#item-section .middle-column .top-section {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#item-section .middle-column .best-seller img {
+    width: 6rem;
+}
+
+#item-section .middle-column .bottom-section {
+    padding: 0.5rem 0;
+}
+
+#item-section .middle-column .bottom-section ul {
+    list-style: disc;
+}
+
+#item-section .middle-column .bottom-section ul li {
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+    padding: 0.1rem 0;
+    word-break: break-all;
+}
+
+/* Right column */
+#item-section .right-column {
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#item-section .right-column .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#item-section .right-column .card .top-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+}
+
+#item-section .right-column .card .top-part * {
+    padding: 0.5rem 0;
+}
+
+#item-section .right-column .card .top-part .unavailable-text {
+    font-size: 1rem;
+}
+
+#item-section .right-column .card .top-part .deliver {
+    text-align: left;
+    padding: 0.5rem 0;
+}
+
+#item-section .right-column .card .bottom-part {
+    padding: 0.5rem 0;
+}
+
+/* Carousel Styling */
+#related-products {
+    padding: 1rem;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.prime {
+   width: 3rem; 
+   padding-left: 0.2rem;
+}
+
+.carousel .container {
+    padding: 0 0.2rem;
+    /* display: flex;
+    flex-direction: column; */
 }
